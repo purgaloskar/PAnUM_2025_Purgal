@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/baby_blue"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kawiarnia Aroma"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_kawiarnia"
+            android:layout_marginBottom="40dp"/>
+
+        <Button
+            android:id="@+id/btnNapoje"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Napoje"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnPrzekaski"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Przekąski"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnLokale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista lokali"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor: Oskar Purgal"
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
