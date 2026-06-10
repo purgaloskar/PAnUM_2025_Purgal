@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempo -> Obliczenia"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/etTempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tempo (min/km)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etDystansTempo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dystans (km)"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnTempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz"/>
+
+        <TextView
+            android:id="@+id/tvTempoWynik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prędkość -> Obliczenia"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/etPredkosc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prędkość (km/h)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etDystansPredkosc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dystans (km)"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnPredkosc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz"/>
+
+        <TextView
+            android:id="@+id/tvPredkoscWynik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wymagane tempo i prędkość"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/etDystansCel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dystans (km)"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/etCzasCel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Czas (minuty)"
+            android:inputType="numberDecimal"/>
+
+        <Button
+            android:id="@+id/btnCel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oblicz"/>
+
+        <TextView
+            android:id="@+id/tvCelWynik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
