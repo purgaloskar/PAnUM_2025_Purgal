@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ECEFF1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- HEADER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Konwerter KWiJ"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Projekt zaliczeniowy"
+            android:textSize="14sp"
+            android:textColor="#455A64"
+            android:layout_marginBottom="16dp" />
+
+        <!-- CARD -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Typ konwersji"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/spTyp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jednostka źródłowa"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+
+            <Spinner
+                android:id="@+id/spZrodlo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jednostka docelowa"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+
+            <Spinner
+                android:id="@+id/spCel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etWartosc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Podaj wartość"
+                android:inputType="text"
+                android:layout_marginTop="14dp"
+                android:padding="10dp"/>
+
+            <Button
+                android:id="@+id/btnSwap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Zamień miejscami"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <!-- RESULT -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wynik"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/tvWynik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="#0D47A1"/>
+
+        <!-- FOOTER -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Autor: Oskar Purgal"
+            android:layout_marginTop="30dp"
+            android:textColor="#546E7A"
+            android:textStyle="italic"/>
+
+    </LinearLayout>
+
+</ScrollView>
