@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F0F8FF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#89CFF0"
+        app:title="CoffeeTime"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MENU KAFETERII"
+        android:textSize="26sp"
+        android:padding="16dp"
+        android:textColor="#1A365D"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autor: Oskar Purgal"
+        android:textSize="14sp"
+        android:paddingBottom="16dp"
+        android:textColor="#555555"
+        android:gravity="center"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/spinner_produkty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="12dp"
+        android:background="#E0F2FE"/>
+
+    <EditText
+        android:id="@+id/et_ilosc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wpisz ilość"
+        android:inputType="number"
+        android:layout_margin="16dp"
+        android:padding="12dp" />
+
+    <Button
+        android:id="@+id/btn_dodaj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DODAJ DO KOSZYKA"
+        android:backgroundTint="#89CFF0"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:layout_margin="16dp"
+        android:padding="14dp" />
+
+    <Button
+        android:id="@+id/btn_idz_do_koszyka"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="KOSZYK"
+        android:backgroundTint="#1A365D"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:layout_margin="16dp"
+        android:padding="14dp" />
+
+</LinearLayout>
