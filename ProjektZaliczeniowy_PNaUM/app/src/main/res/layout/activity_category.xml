@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="#F4F9FD"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WYBIERZ KATEGORIĘ"
+        android:textColor="#1E3A60"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/btnDrinks"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Napoje"
+            android:backgroundTint="#1E3A60"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnSnacks"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Desery"
+            android:backgroundTint="#1E3A60"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btnDinners"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="Obiady"
+            android:backgroundTint="#1E3A60"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#D1E4F2"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TWÓJ KOSZYK"
+        android:textColor="#1E3A60"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <ListView
+        android:id="@+id/lvCart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#D1E4F2"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvTotalSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Razem do zapłaty: 0.00 zł"
+        android:textColor="#1E3A60"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="end"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnSubmitOrder"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="ZŁÓŻ ZAMÓWIENIE"
+        android:backgroundTint="#2E7D32"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

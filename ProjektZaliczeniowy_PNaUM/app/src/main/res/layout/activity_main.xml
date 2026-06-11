@@ -1,76 +1,121 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#F0F8FF">
+    android:fitsSystemWindows="true"
+    android:background="#F4F9FD"
+    android:padding="16dp">
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#89CFF0"
-        app:title="CoffeeTime"
-        app:titleTextColor="#FFFFFF" />
-
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="MENU KAFETERII"
-        android:textSize="26sp"
-        android:padding="16dp"
-        android:textColor="#1A365D"
-        android:fontFamily="sans-serif-black"
-        android:gravity="center" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Autor: Oskar Purgal"
-        android:textSize="14sp"
-        android:paddingBottom="16dp"
-        android:textColor="#555555"
-        android:gravity="center"
-        android:textStyle="italic" />
-
-    <Spinner
-        android:id="@+id/spinner_produkty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:background="#64B5F6"
         android:padding="12dp"
-        android:background="#E0F2FE"/>
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CoffeeTime"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#D1E4F2"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnSelectProduct"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Wybierz produkt z listy"
+        android:backgroundTint="#1E3A60"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="8dp" />
 
     <EditText
-        android:id="@+id/et_ilosc"
+        android:id="@+id/etQuantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Wpisz ilość"
-        android:inputType="number"
-        android:layout_margin="16dp"
-        android:padding="12dp" />
+        android:hint="Ilość (max 3 cyfry)"
+        android:inputType="none"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
 
     <Button
-        android:id="@+id/btn_dodaj"
+        android:id="@+id/btnAddToCart"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:text="DODAJ DO KOSZYKA"
-        android:backgroundTint="#89CFF0"
+        android:backgroundTint="#64B5F6"
         android:textColor="#FFFFFF"
-        android:fontFamily="sans-serif-black"
-        android:layout_margin="16dp"
-        android:padding="14dp" />
+        android:layout_marginBottom="12dp" />
 
-    <Button
-        android:id="@+id/btn_idz_do_koszyka"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="KOSZYK"
-        android:backgroundTint="#1A365D"
-        android:textColor="#FFFFFF"
-        android:fontFamily="sans-serif-black"
-        android:layout_margin="16dp"
-        android:padding="14dp" />
+        android:orientation="vertical"
+        android:layout_marginBottom="12dp">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <Button android:id="@+id/btnKey1" android:text="1" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnKey2" android:text="2" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnKey3" android:text="3" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+
+            <Button android:id="@+id/btnKey4" android:text="4" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnKey5" android:text="5" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnKey6" android:text="6" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+
+            <Button android:id="@+id/btnKey7" android:text="7" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnKey8" android:text="8" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnKey9" android:text="9" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+
+            <View android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" />
+            <Button android:id="@+id/btnKey0" android:text="0" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#1E3A60" android:textColor="#FFFFFF" />
+            <Button android:id="@+id/btnKeyDel" android:text="DEL" android:layout_width="0dp" android:layout_columnWeight="1" android:layout_height="45dp" android:backgroundTint="#D32F2F" android:textColor="#FFFFFF" />
+        </GridLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="POWRÓT"
+            android:backgroundTint="#64B5F6"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/btnSubmitFromMain"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="ZŁÓŻ ZAMÓWIENIE"
+            android:backgroundTint="#1E3A60"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 
 </LinearLayout>
